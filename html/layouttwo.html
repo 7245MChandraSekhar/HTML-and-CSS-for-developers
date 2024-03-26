@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layoutTwo</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        font-family: Arial;
+        box-sizing:border-box
+    }
+    #body{
+        display: flex;
+        flex-direction: row;
+
+    }
+    #warpper{
+        width: 60%;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    #logo
+    {
+        width: 100%;
+        min-height: 50px;
+        display: flex;
+        flex-direction: row;
+        background-color: lightgray;
+        align-items: center;
+        padding-left: 2%;
+
+    }
+    #main-div{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height:500px;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+    #left-div{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 20%;
+    }
+    #right-div{
+        display: flex;
+        flex-direction:column;
+        flex-basis: 75%;
+    }
+    #header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 100px;
+        background-color: lightgray;
+        justify-content: center;
+        align-items: center;
+    }
+    #bodyarea{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 390px;
+        margin-top: 10px;
+        background-color: lightgrey;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer{
+        display: flex;
+        flex-direction: row;
+        background-color: lightgray;
+        width:100%;
+        min-height: 50px;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+</style>
+<body>
+<div id="warpper">
+    <div id="logo">
+        Logo
+
+    </div>
+    <div id="main-div">
+        <div id="left-div">
+            <div id="sidebar">
+                sidebar
+
+            </div>
+            <div id="nav">
+              NavigationBar
+
+            </div>
+
+
+        </div>
+        <div id="right-div">
+            <div id="header">
+                    Header/Banner
+            </div>
+            <div id="bodyarea">
+               Body area
+        </div>
+
+        </div>
+
+    </div>
+    <div id="footer">
+        Footer
+
+    </div>
+
+</div>
+</body>
+</html>

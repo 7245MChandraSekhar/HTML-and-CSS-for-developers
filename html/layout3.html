@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout3</title>
+</head>
+<style>
+
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: Arial;
+    }
+    #wrapper{
+        width: 80%;
+        min-height: 100px;
+        margin: auto;
+
+    }
+    #logo{
+        width: 100%;
+        min-height: 50px;
+        background-color: lightgray;
+        line-height: 50px;
+        padding-left: 2%;
+        margin-bottom: 10px;
+
+    }
+    #main-div{
+        width: 100%;
+        min-height: 500px;
+        margin-bottom: 10px;
+
+    }
+    #left-div{
+        width: 25%;
+        min-height: 500px;
+        float: left;
+    }
+    #right-div{
+        width: 70%;
+        min-height: 500px;
+        float: right;
+    }
+    .clearfix::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    #header{
+        width: 100%;
+        min-height: 150px;
+        background-color: lightgray;
+        margin-bottom: 50px;
+        text-align: center;
+        line-height: 150px;
+    }
+    #bodyarea{
+        width: 100%;
+        min-height: 300px;
+        background-color: lightgray;
+        text-align: center;
+        line-height: 300px;
+    }
+    #footer{
+        width: 100%;
+        min-height: 50px;
+        background-color: lightgray;
+        text-align: center;
+        line-height: 50px;
+    }
+   
+</style>
+<body>
+    <div id="wrapper">
+        <div id="logo">
+            Logo
+
+        </div>
+        <div id="main-div" class="clearfix">
+            <div id="left-div">
+                <div id="sidebar"> Side Bar</div>
+                <div id="nav-div"> Navigation</div>
+
+            </div>
+            <div id="right-div">
+                <div id="header">Header / Banner</div>
+                <div id="bodyarea">
+                    Body Area
+
+                </div>
+
+            </div>
+
+        </div>
+        <div id="footer">Footer</div>
+
+
+    </div>
+    
+</body>
+</html>

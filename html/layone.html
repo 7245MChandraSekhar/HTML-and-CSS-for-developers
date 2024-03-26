@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lay_one</title>
+<style>
+    *{
+        margin:0%;
+        padding:0px;
+        box-sizing: border-box;
+        font-style: normal;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #wrapper{
+        display: flex;
+        flex-direction: column;
+        background-color: orange;
+        width: 60%;
+        min-height: 200px;
+        margin: auto;
+    }
+    #logo-nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 50px;
+        background-color: lightgray;
+        margin-bottom: 10px;
+    }
+    #logo{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 50%;
+        align-items: center;
+        padding-left: 2%;
+
+    }
+    #nav{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        flex-basis: 50%;
+    }
+    #header-banner{
+        display: flex;
+        flex-direction: row;
+        background-color: lightgray;
+        width: 100%;
+        min-height: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    #intro{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 80px;
+        background-color: lightgray;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    #main-boxs{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height:400px ;
+        margin-top: 10px;
+
+
+    }
+    .box{
+
+        width: 30%;
+        min-height: 400px;
+        background-color: lightgrey;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+    .box:nth-child(2){
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+</style>
+</head>
+<body>
+<div  id="wrapper">
+    <div id="logo-nav">
+        <div id="logo">
+            Logo
+
+        </div>
+        <div id="nav">
+            Navigation
+
+        </div>
+
+    </div>
+    <div id="header-banner">
+        Header/banner
+
+    </div>
+    <div id="intro">
+        Intro Area
+
+    </div>
+
+    <div id="main-boxs">
+        <div class="box">
+            box1
+
+        </div>
+        <div class="box">
+            box2
+
+        </div>
+        <div class="box">
+            box3
+
+        </div>
+    
+
+
+    </div>
+
+
+</div>
+
+    
+</body>
+</html>
